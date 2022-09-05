@@ -1,0 +1,4 @@
+#!/bin/sh
+cd -P -- "$(dirname -- "$0")"
+./online_shop eval OnlineShop.Release.migrate
+PHX_SERVER=true exec ./online_shop start
